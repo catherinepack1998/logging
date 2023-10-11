@@ -1,0 +1,12 @@
+ 2023-10-11 21:50:31,490 ERROR Internal Server Error: / C:\Users\allov\pycharmprojects\logproj\venv\lib\site-packages\django\utils\log.py (<class 'TypeError'>, TypeError("_log() got an unexpected keyword argument 'levelname'"), <traceback object at 0x000002A976DA5600>)
+Traceback (most recent call last):
+  File "C:\Users\allov\pycharmprojects\logproj\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\allov\pycharmprojects\logproj\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\allov\pycharmprojects\logproj\loggerproj\logs\views.py", line 12, in main
+    logger.error(levelname = 'debug',msg='Лог ошибки')
+  File "C:\Users\allov\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py", line 1463, in error
+    self._log(ERROR, msg, args, **kwargs)
+TypeError: _log() got an unexpected keyword argument 'levelname'
+ 2023-10-11 21:50:31,494 ERROR "GET / HTTP/1.1" 500 73846 C:\Users\allov\pycharmprojects\logproj\venv\lib\site-packages\django\core\servers\basehttp.py None
